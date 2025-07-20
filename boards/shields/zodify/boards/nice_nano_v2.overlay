@@ -1,4 +1,4 @@
-#include "<board>-pinctrl.dtsi"
+#include "zodify-pinctrl.dtsi"
 
 &spi0 {
     compatible = "nordic,nrf-spim";
