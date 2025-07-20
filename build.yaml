@@ -7,6 +7,6 @@
 #
 include:
   - board: nice_nano_v2
-    shield: zodify_left nice_oled
+    shield: zodify_left
   - board: nice_nano_v2
-    shield: zodify_right nice_oled
+    shield: zodify_right
