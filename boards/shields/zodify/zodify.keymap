@@ -6,7 +6,7 @@
 #define NUMB 1
 #define NUMP 2
 #define SYMB 3
-#define FUNC 3
+#define FUNC 4
 
 / {
   keymap {
