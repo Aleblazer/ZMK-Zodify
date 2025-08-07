@@ -1,9 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
 
-&physical_layout0 {
-    transform = <&default_transform>;
-};
 
 / {
     chosen {
@@ -30,4 +27,13 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(1,6) RC(2,6)   RC(2,7)  RC(1,
         rows = <0>;
         events = <0>;
     };
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder &right_encoder>;
+        triggers-per-rotation = <20>;
+    };
+};
+
+&physical_layout0 {
+    transform = <&default_transform>;
 };
