@@ -6,7 +6,7 @@
         display-name = "Zodify";
 
         transform = <&default_transform>;
-        mock_kscan = <&mock_kscan0>;
+        kscan = <&kscan0>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0   53       0     0     0>

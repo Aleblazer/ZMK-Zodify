@@ -3,9 +3,8 @@
 
 / {
     chosen {
-        zephyr,display = &oled;
-        zmk,kscan = &kscan0;
         zmk,physical-layout = &zodify_physical_layout;
+        zephyr,display = &oled;
     };
 
     default_transform: keymap_transform0 {
