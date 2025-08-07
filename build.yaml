@@ -12,5 +12,3 @@ include:
     shield: zodify_right nice_oled
   - board: seeeduino_xiao_ble
     shield: zodify_dongle
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
