@@ -1,27 +1,14 @@
 if SHIELD_ZODIFY_DONGLE
 
-# Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
     default "Zodify"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-config ZMK_SPLIT
-    default y
-
-config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
-    default 2
-
-config BT_MAX_CONN
-    default 6
-
-config BT_MAX_PAIRED
-    default 6
-
 endif
 
-if SHIELD_ZODIFY_LEFT || SHIELD_ZODIFY_RIGHT
+if SHIELD_ZODIFY_LEFT || SHIELD_ZODIFY_RIGHT || SHIELD_ZODIFY_DONGLE
 
 config ZMK_SPLIT
     default y
