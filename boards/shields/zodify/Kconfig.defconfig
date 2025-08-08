@@ -13,16 +13,6 @@ if SHIELD_ZODIFY_LEFT || SHIELD_ZODIFY_RIGHT || SHIELD_ZODIFY_DONGLE
 config ZMK_SPLIT
     default y
 
-if ZMK_DISPLAY
-
-config I2C
-    default y
-
-config SSD1306
-    default y
-
-endif # ZMK_DISPLAY
-
 if LVGL
 
 config LV_Z_VDB_SIZE
@@ -39,5 +29,17 @@ choice LV_COLOR_DEPTH
 endchoice
 
 endif # LVGL
+
+if SHIELD_ZODIFY_LEFT || SHIELD_ZODIFY_RIGHT
+
+if ZMK_DISPLAY
+
+config I2C
+    default y
+
+config SSD1306
+    default y
+
+endif # ZMK_DISPLAY
 
 endif
