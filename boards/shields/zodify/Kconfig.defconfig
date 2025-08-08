@@ -30,6 +30,8 @@ endchoice
 
 endif # LVGL
 
+endif
+
 if SHIELD_ZODIFY_LEFT || SHIELD_ZODIFY_RIGHT
 
 if ZMK_DISPLAY
